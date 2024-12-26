@@ -14,7 +14,10 @@ const log = new Logger();
 export class SignOutComponent implements OnInit {
     error: string | undefined;
 
-    constructor(private readonly _authService: AuthService, private readonly _router: Router) {}
+    constructor(
+        private readonly _authService: AuthService,
+        private readonly _router: Router,
+    ) {}
 
     ngOnInit(): void {
         this._authService.logout();

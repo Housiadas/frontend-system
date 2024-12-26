@@ -22,7 +22,10 @@ export class SidebarComponent implements OnInit {
     public appName: string | undefined = environment.appName;
     public version: string | null = environment.version;
 
-    constructor(public themeService: ThemeService, public menuService: MenuService) {}
+    constructor(
+        public themeService: ThemeService,
+        public menuService: MenuService,
+    ) {}
 
     ngOnInit(): void {}
 

@@ -13,7 +13,10 @@ import { ThemeService } from '@app/core/services/theme.service';
 export class AppComponent implements OnInit {
     name: string | undefined = environment.appName;
 
-    constructor(public themeService: ThemeService, private _titleService: Title) {}
+    constructor(
+        public themeService: ThemeService,
+        private _titleService: Title,
+    ) {}
 
     ngOnInit(): void {
         if (this.name != null) {
