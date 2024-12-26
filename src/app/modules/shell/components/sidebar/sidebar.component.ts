@@ -8,15 +8,13 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { NgClass, NgIf } from '@angular/common';
 
 import { environment } from '@env/environment';
-import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
-import { FaIconComponent } from '@fortawesome/angular-fontawesome';
-import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons/faChevronCircleLeft';
+import { faChevronCircleRight, faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-sidebar',
     templateUrl: './sidebar.component.html',
     styleUrls: ['./sidebar.component.scss'],
-    imports: [NgClass, NgIf, AngularSvgIconModule, SidebarMenuComponent, RouterLink, FaIconComponent],
+    imports: [NgClass, NgIf, AngularSvgIconModule, SidebarMenuComponent, RouterLink],
 })
 export class SidebarComponent implements OnInit {
     public appName: string | undefined = environment.appName;

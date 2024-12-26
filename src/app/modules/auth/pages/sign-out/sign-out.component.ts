@@ -9,7 +9,6 @@ const log = new Logger();
 @Component({
     selector: 'app-sign-out',
     templateUrl: './sign-out.component.html',
-    imports: [RouterLink],
 })
 export class SignOutComponent implements OnInit {
     error: string | undefined;
