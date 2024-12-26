@@ -16,7 +16,6 @@ import { NftSingleCardComponent } from '@app/modules/dashboard/components/nft/nf
         NftHeaderComponent,
         NftSingleCardComponent,
     ],
-    standalone: true,
 })
 export class IndexComponent implements OnInit {
     constructor() {}

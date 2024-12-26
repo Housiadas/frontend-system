@@ -9,7 +9,6 @@ import { NftHeaderComponent } from '../../components/nft/nft-header/nft-header.c
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
-    standalone: true,
     imports: [
         NftHeaderComponent,
         NftDualCardComponent,

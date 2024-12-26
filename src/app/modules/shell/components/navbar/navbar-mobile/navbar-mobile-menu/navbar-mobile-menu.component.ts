@@ -12,7 +12,6 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
     selector: 'app-navbar-mobile-menu',
     templateUrl: './navbar-mobile-menu.component.html',
     styleUrls: ['./navbar-mobile-menu.component.scss'],
-    standalone: true,
     imports: [
         NgFor,
         NgClass,

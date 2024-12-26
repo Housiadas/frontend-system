@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
     selector: 'app-forgot-password',
     templateUrl: './forgot-password.component.html',
     styleUrls: ['./forgot-password.component.scss'],
-    standalone: true,
     imports: [FormsModule, RouterLink],
 })
 export class ForgotPasswordComponent implements OnInit {

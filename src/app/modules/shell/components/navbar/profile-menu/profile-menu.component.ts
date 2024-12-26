@@ -7,7 +7,6 @@ import { ClickOutsideDirective } from '../../../../../shared/directives/click-ou
     selector: 'app-profile-menu',
     templateUrl: './profile-menu.component.html',
     styleUrls: ['./profile-menu.component.scss'],
-    standalone: true,
     imports: [ClickOutsideDirective, NgClass, RouterLink],
 })
 export class ProfileMenuComponent implements OnInit {

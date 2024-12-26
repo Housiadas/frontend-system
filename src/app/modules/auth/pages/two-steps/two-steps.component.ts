@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
     selector: 'app-two-steps',
     templateUrl: './two-steps.component.html',
     styleUrls: ['./two-steps.component.scss'],
-    standalone: true,
     imports: [FormsModule, RouterLink],
 })
 export class TwoStepsComponent implements OnInit {

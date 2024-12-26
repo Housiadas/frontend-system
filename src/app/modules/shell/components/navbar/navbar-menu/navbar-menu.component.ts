@@ -8,7 +8,6 @@ import { NgFor, NgClass } from '@angular/common';
     selector: 'app-navbar-menu',
     templateUrl: './navbar-menu.component.html',
     styleUrls: ['./navbar-menu.component.scss'],
-    standalone: true,
     imports: [NgFor, NgClass, NavbarSubmenuComponent],
 })
 export class NavbarMenuComponent implements OnInit {

@@ -6,7 +6,6 @@ import { NgFor } from '@angular/common';
 @Component({
     selector: '[nft-auctions-table]',
     templateUrl: './nft-auctions-table.component.html',
-    standalone: true,
     imports: [NgFor, NftAuctionsTableItemComponent],
 })
 export class NftAuctionsTableComponent implements OnInit {

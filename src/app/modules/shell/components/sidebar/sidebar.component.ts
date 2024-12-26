@@ -16,7 +16,6 @@ import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons/faChevron
     selector: 'app-sidebar',
     templateUrl: './sidebar.component.html',
     styleUrls: ['./sidebar.component.scss'],
-    standalone: true,
     imports: [NgClass, NgIf, AngularSvgIconModule, SidebarMenuComponent, RouterLink, FaIconComponent],
 })
 export class SidebarComponent implements OnInit {

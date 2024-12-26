@@ -14,7 +14,6 @@ import { MenuService } from '@shell/services/menu.service';
     templateUrl: './sidebar-menu.component.html',
     styleUrls: ['./sidebar-menu.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [
         NgFor,
         NgClass,

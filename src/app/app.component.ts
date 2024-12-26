@@ -8,6 +8,7 @@ import { ThemeService } from '@app/core/services/theme.service';
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
+    standalone: false,
 })
 export class AppComponent implements OnInit {
     name: string | undefined = environment.appName;

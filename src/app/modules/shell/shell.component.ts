@@ -9,7 +9,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     selector: 'app-shell',
     templateUrl: './shell.component.html',
     styleUrls: ['./shell.component.scss'],
-    standalone: true,
     imports: [SidebarComponent, NavbarComponent, RouterOutlet, FooterComponent],
 })
 export class ShellComponent implements OnInit {

@@ -13,7 +13,6 @@ import { SubMenuItem } from 'src/app/core/models/menu.model';
     selector: 'app-sidebar-submenu',
     templateUrl: './sidebar-submenu.component.html',
     styleUrls: ['./sidebar-submenu.component.scss'],
-    standalone: true,
     imports: [NgClass, NgFor, NgTemplateOutlet, RouterLinkActive, RouterLink, AngularSvgIconModule, FaIconComponent],
 })
 export class SidebarSubmenuComponent implements OnInit {

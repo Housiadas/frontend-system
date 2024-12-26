@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
     selector: 'app-sign-up',
     templateUrl: './sign-up.component.html',
     styleUrls: ['./sign-up.component.scss'],
-    standalone: true,
     imports: [FormsModule, RouterLink, AngularSvgIconModule],
 })
 export class SignUpComponent implements OnInit {

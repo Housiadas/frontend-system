@@ -11,7 +11,6 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
     selector: 'app-navbar-mobile-submenu',
     templateUrl: './navbar-mobile-submenu.component.html',
     styleUrls: ['./navbar-mobile-submenu.component.scss'],
-    standalone: true,
     imports: [NgClass, NgFor, NgTemplateOutlet, RouterLinkActive, RouterLink, AngularSvgIconModule, FaIconComponent],
 })
 export class NavbarMobileSubmenuComponent implements OnInit {

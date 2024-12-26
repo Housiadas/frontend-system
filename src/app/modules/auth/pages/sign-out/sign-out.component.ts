@@ -9,7 +9,6 @@ const log = new Logger();
 @Component({
     selector: 'app-sign-out',
     templateUrl: './sign-out.component.html',
-    standalone: true,
     imports: [RouterLink],
 })
 export class SignOutComponent implements OnInit {

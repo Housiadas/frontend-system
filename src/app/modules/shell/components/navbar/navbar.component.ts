@@ -11,7 +11,6 @@ import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
     selector: 'app-navbar',
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss'],
-    standalone: true,
     imports: [AngularSvgIconModule, NavbarMenuComponent, ProfileMenuComponent, NavbarMobileComponent],
 })
 export class NavbarComponent implements OnInit {

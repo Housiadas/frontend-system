@@ -11,7 +11,6 @@ import { SubMenuItem } from 'src/app/core/models/menu.model';
     selector: 'div[navbar-submenu]',
     templateUrl: './navbar-submenu.component.html',
     styleUrls: ['./navbar-submenu.component.scss'],
-    standalone: true,
     imports: [NgFor, NgTemplateOutlet, RouterLinkActive, RouterLink, NgIf, FaIconComponent],
 })
 export class NavbarSubmenuComponent implements OnInit {
