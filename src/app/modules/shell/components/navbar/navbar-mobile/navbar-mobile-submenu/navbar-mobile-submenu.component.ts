@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MenuService } from '@app/modules/shell/services/menu.service';
-import { SubMenuItem } from 'src/app/core/models/menu.model';
+import { SubMenuItemModel } from 'src/app/core/models/menu.model';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { RouterLinkActive, RouterLink } from '@angular/router';
 import { NgClass, NgFor, NgTemplateOutlet } from '@angular/common';
@@ -15,7 +15,7 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 })
 export class NavbarMobileSubmenuComponent implements OnInit {
     protected readonly faChevronCircleRight = faChevronCircleRight;
-    @Input() public submenu = <SubMenuItem>{};
+    @Input() public submenu = <SubMenuItemModel>{};
 
     constructor(private menuService: MenuService) {}
 

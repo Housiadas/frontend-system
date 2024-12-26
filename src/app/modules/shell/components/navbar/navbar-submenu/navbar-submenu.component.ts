@@ -5,7 +5,7 @@ import { RouterLinkActive, RouterLink } from '@angular/router';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons/faChevronCircleLeft';
 
-import { SubMenuItem } from 'src/app/core/models/menu.model';
+import { SubMenuItemModel } from 'src/app/core/models/menu.model';
 
 @Component({
     selector: 'div[navbar-submenu]',
@@ -15,7 +15,7 @@ import { SubMenuItem } from 'src/app/core/models/menu.model';
 })
 export class NavbarSubmenuComponent implements OnInit {
     protected readonly faChevronCircleLeft = faChevronCircleLeft;
-    @Input() public submenu = <SubMenuItem[]>{};
+    @Input() public submenu = <SubMenuItemModel[]>{};
 
     constructor() {}
 

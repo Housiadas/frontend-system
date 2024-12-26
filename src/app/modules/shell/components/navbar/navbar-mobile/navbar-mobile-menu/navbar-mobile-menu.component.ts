@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SubMenuItem } from 'src/app/core/models/menu.model';
+import { SubMenuItemModel } from 'src/app/core/models/menu.model';
 import { MenuService } from '@app/modules/shell/services/menu.service';
 import { NavbarMobileSubmenuComponent } from '../navbar-mobile-submenu/navbar-mobile-submenu.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -29,7 +29,7 @@ export class NavbarMobileMenuComponent implements OnInit {
 
     constructor(public menuService: MenuService) {}
 
-    public toggleMenu(subMenu: SubMenuItem) {
+    public toggleMenu(subMenu: SubMenuItemModel) {
         this.menuService.toggleMenu(subMenu);
     }
 

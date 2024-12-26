@@ -3,7 +3,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { Menu } from '@app/core/constants/menu';
-import { MenuItem, SubMenuItem } from '@app/core/models/menu.model';
+import { MenuItemModel, SubMenuItemModel } from '@app/core/models/menu.model';
 
 @Injectable({
     providedIn: 'root',
@@ -11,7 +11,7 @@ import { MenuItem, SubMenuItem } from '@app/core/models/menu.model';
 export class MenuService implements OnDestroy {
     private _showSidebar = signal(true);
     private _showMobileMenu = signal(false);
-    private _pagesMenu = signal<MenuItem[]>([]);
+    private _pagesMenu = signal<MenuItemModel[]>([]);
     private _subscription = new Subscription();
 
     constructor(private router: Router) {
@@ -65,7 +65,7 @@ export class MenuService implements OnDestroy {
         menu.expanded = !menu.expanded;
     }
 
-    public toggleSubMenu(submenu: SubMenuItem) {
+    public toggleSubMenu(submenu: SubMenuItemModel) {
         submenu.expanded = !submenu.expanded;
     }
 

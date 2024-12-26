@@ -5,7 +5,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 
-import { SubMenuItem } from 'src/app/core/models/menu.model';
+import { SubMenuItemModel } from 'src/app/core/models/menu.model';
 import { SidebarSubmenuComponent } from '../sidebar-submenu/sidebar-submenu.component';
 import { MenuService } from '@shell/services/menu.service';
 
@@ -30,7 +30,7 @@ export class SidebarMenuComponent implements OnInit {
 
     constructor(public menuService: MenuService) {}
 
-    public toggleMenu(subMenu: SubMenuItem) {
+    public toggleMenu(subMenu: SubMenuItemModel) {
         this.menuService.toggleMenu(subMenu);
     }
 

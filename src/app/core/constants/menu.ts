@@ -1,8 +1,8 @@
-import { MenuItem } from '@app/core/models';
+import { MenuItemModel } from '@app/core/models';
 import { faBell, faCogs, faDashboard, faDownload, faGift, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 export class Menu {
-    public static pages: MenuItem[] = [
+    public static pages: MenuItemModel[] = [
         {
             group: 'Base',
             separator: true,

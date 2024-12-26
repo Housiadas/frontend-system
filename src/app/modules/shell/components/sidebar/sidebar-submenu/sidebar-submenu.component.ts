@@ -7,7 +7,7 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 import { MenuService } from '@shell/services/menu.service';
-import { SubMenuItem } from 'src/app/core/models/menu.model';
+import { SubMenuItemModel } from 'src/app/core/models/menu.model';
 
 @Component({
     selector: 'app-sidebar-submenu',
@@ -18,7 +18,7 @@ import { SubMenuItem } from 'src/app/core/models/menu.model';
 export class SidebarSubmenuComponent implements OnInit {
     protected readonly faChevronCircleRight = faChevronCircleRight;
 
-    @Input() public submenu = <SubMenuItem>{};
+    @Input() public submenu = <SubMenuItemModel>{};
 
     constructor(public menuService: MenuService) {}
 
