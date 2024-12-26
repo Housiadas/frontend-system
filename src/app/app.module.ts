@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { NgClass } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
@@ -15,37 +15,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { UsersModule } from '@app/modules/users/users.module';
 
 @NgModule({
+    declarations: [AppComponent],
+    bootstrap: [AppComponent],
     imports: [
         AuthModule,
         BrowserModule,
         DashboardModule,
         FormsModule,
-        HttpClientModule,
         NgClass,
         ResponsiveHelperComponent,
         RouterModule,
         RouterOutlet,
         ShellModule,
         UsersModule,
-        AppRoutingModule, // must be imported as the last module as it contains the fallback route
+        AppRoutingModule,
     ],
-    declarations: [AppComponent],
-    providers: [
-        // {
-        //   provide: HTTP_INTERCEPTORS,
-        //   useClass: ApiPrefixInterceptor,
-        //   multi: true,
-        // },
-        // {
-        //   provide: HTTP_INTERCEPTORS,
-        //   useClass: ErrorHandlerInterceptor,
-        //   multi: true,
-        // },
-        // {
-        //   provide: RouteReuseStrategy,
-        //   useClass: RouteReusableStrategy,
-        // },
-    ],
-    bootstrap: [AppComponent],
+    providers: [provideHttpClient(withInterceptorsFromDi())],
 })
 export class AppModule {}
