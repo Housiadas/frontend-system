@@ -1,6 +1,11 @@
+UID := $(id -u) 
+
 ###################################
 # DEVELOPEMENT
 ###################################
+build:
+	docker build --build-arg USER_UID=$(UID) -t angular-container -f .docker/Dockerfile .
+
 install:
 	pnpm install
 
@@ -23,4 +28,5 @@ lint/fix:
 	pnpm run lint-fix
 
 test:
-	pnpm run test
+	make build
+	docker run --rm -v $(pwd):/app angular-container pnpm run test

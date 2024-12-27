@@ -3,7 +3,7 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
         "outDir": "./out-tsc/spec",
-        "types": ["jasmine"],
+        "types": ["jest"],
         "typeRoots": ["node_modules/@types"]
     },
     "files": ["src/test.ts", "src/polyfills.ts"],

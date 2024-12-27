@@ -120,8 +120,8 @@ importers:
                 specifier: ^9.0.0
                 version: 9.1.7
             jasmine-core:
-                specifier: ~3.10.0
-                version: 3.10.1
+                specifier: ~5.5.0
+                version: 5.5.0
             jest:
                 specifier: ^29.7.0
                 version: 29.7.0(@types/node@22.10.2)
@@ -135,11 +135,11 @@ importers:
                 specifier: ~2.0.3
                 version: 2.0.3
             karma-jasmine:
-                specifier: ~4.0.0
-                version: 4.0.2(karma@6.3.20)
+                specifier: ~5.1.0
+                version: 5.1.0(karma@6.3.20)
             karma-jasmine-html-reporter:
-                specifier: ~1.7.0
-                version: 1.7.0(jasmine-core@3.10.1)(karma-jasmine@4.0.2(karma@6.3.20))(karma@6.3.20)
+                specifier: ~2.1.0
+                version: 2.1.0(jasmine-core@5.5.0)(karma-jasmine@5.1.0(karma@6.3.20))(karma@6.3.20)
             postcss:
                 specifier: ^8.4.14
                 version: 8.4.49
@@ -162,8 +162,8 @@ importers:
                 specifier: ^14.0.0
                 version: 14.0.0(postcss@8.4.49)(stylelint@16.12.0(typescript@5.5.4))
             tailwind-scrollbar:
-                specifier: ^1.3.1
-                version: 1.3.2
+                specifier: ^3.1.0
+                version: 3.1.0(tailwindcss@3.4.17)
             tailwindcss:
                 specifier: ^3.1.6
                 version: 3.4.17
@@ -6060,10 +6060,16 @@ packages:
                 integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==,
             }
 
-    jasmine-core@3.10.1:
+    jasmine-core@4.6.1:
         resolution:
             {
-                integrity: sha512-ooZWSDVAdh79Rrj4/nnfklL3NQVra0BcuhcuWoAwwi+znLDoUeH87AFfeX8s+YeYi6xlv5nveRyaA1v7CintfA==,
+                integrity: sha512-VYz/BjjmC3klLJlLwA4Kw8ytk0zDSmbbDLNs794VnWmkcCB7I9aAL/D48VNQtmITyPvea2C3jdUMfc3kAoy0PQ==,
+            }
+
+    jasmine-core@5.5.0:
+        resolution:
+            {
+                integrity: sha512-NHOvoPO6o9gVR6pwqEACTEpbgcH+JJ6QDypyymGbSUIFIFsMMbBJ/xsFNud8MSClfnWclXd7RQlAZBz7yVo5TQ==,
             }
 
     jest-changed-files@29.7.0:
@@ -6419,24 +6425,24 @@ packages:
             }
         engines: { node: '>=10.0.0' }
 
-    karma-jasmine-html-reporter@1.7.0:
+    karma-jasmine-html-reporter@2.1.0:
         resolution:
             {
-                integrity: sha512-pzum1TL7j90DTE86eFt48/s12hqwQuiD+e5aXx2Dc9wDEn2LfGq6RoAxEZZjFiN0RDSCOnosEKRZWxbQ+iMpQQ==,
+                integrity: sha512-sPQE1+nlsn6Hwb5t+HHwyy0A1FNCVKuL1192b+XNauMYWThz2kweiBVW1DqloRpVvZIJkIoHVB7XRpK78n1xbQ==,
             }
         peerDependencies:
-            jasmine-core: '>=3.8'
-            karma: '>=0.9'
-            karma-jasmine: '>=1.1'
+            jasmine-core: ^4.0.0 || ^5.0.0
+            karma: ^6.0.0
+            karma-jasmine: ^5.0.0
 
-    karma-jasmine@4.0.2:
+    karma-jasmine@5.1.0:
         resolution:
             {
-                integrity: sha512-ggi84RMNQffSDmWSyyt4zxzh2CQGwsxvYYsprgyR1j8ikzIduEdOlcLvXjZGwXG/0j41KUXOWsUCBfbEHPWP9g==,
+                integrity: sha512-i/zQLFrfEpRyQoJF9fsCdTMOF5c2dK7C7OmsuKg2D0YSsuZSfQDiLuaiktbuio6F2wiCsZSnSnieIQ0ant/uzQ==,
             }
-        engines: { node: '>= 10' }
+        engines: { node: '>=12' }
         peerDependencies:
-            karma: '*'
+            karma: ^6.0.0
 
     karma-source-map-support@1.4.0:
         resolution:
@@ -8856,11 +8862,14 @@ packages:
             }
         engines: { node: '>=10.0.0' }
 
-    tailwind-scrollbar@1.3.2:
+    tailwind-scrollbar@3.1.0:
         resolution:
             {
-                integrity: sha512-0GLj/4Q0o7bentElusu/1hivl7/1RmV3phYxbV71lE/KUee47YJgCWFUMr3WforBVDz/CG0Jrd835qQpG3Tggg==,
+                integrity: sha512-pmrtDIZeHyu2idTejfV59SbaJyvp1VRjYxAjZBH0jnyrPRo6HL1kD5Glz8VPagasqr6oAx6M05+Tuw429Z8jxg==,
             }
+        engines: { node: '>=12.13.0' }
+        peerDependencies:
+            tailwindcss: 3.x
 
     tailwindcss@3.4.17:
         resolution:
@@ -13501,7 +13510,9 @@ snapshots:
         optionalDependencies:
             '@pkgjs/parseargs': 0.11.0
 
-    jasmine-core@3.10.1: {}
+    jasmine-core@4.6.1: {}
+
+    jasmine-core@5.5.0: {}
 
     jest-changed-files@29.7.0:
         dependencies:
@@ -13878,15 +13889,15 @@ snapshots:
         transitivePeerDependencies:
             - supports-color
 
-    karma-jasmine-html-reporter@1.7.0(jasmine-core@3.10.1)(karma-jasmine@4.0.2(karma@6.3.20))(karma@6.3.20):
+    karma-jasmine-html-reporter@2.1.0(jasmine-core@5.5.0)(karma-jasmine@5.1.0(karma@6.3.20))(karma@6.3.20):
         dependencies:
-            jasmine-core: 3.10.1
+            jasmine-core: 5.5.0
             karma: 6.3.20
-            karma-jasmine: 4.0.2(karma@6.3.20)
+            karma-jasmine: 5.1.0(karma@6.3.20)
 
-    karma-jasmine@4.0.2(karma@6.3.20):
+    karma-jasmine@5.1.0(karma@6.3.20):
         dependencies:
-            jasmine-core: 3.10.1
+            jasmine-core: 4.6.1
             karma: 6.3.20
 
     karma-source-map-support@1.4.0:
@@ -15400,11 +15411,9 @@ snapshots:
             string-width: 4.2.3
             strip-ansi: 6.0.1
 
-    tailwind-scrollbar@1.3.2:
+    tailwind-scrollbar@3.1.0(tailwindcss@3.4.17):
         dependencies:
             tailwindcss: 3.4.17
-        transitivePeerDependencies:
-            - ts-node
 
     tailwindcss@3.4.17:
         dependencies:
