@@ -23,7 +23,6 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - End-to-end tests using [Protractor](https://github.com/angular/protractor)
 - Static code analysis: [TSLint](https://github.com/palantir/tslint), [Codelyzer](https://github.com/mgechev/codelyzer),
   [Stylelint](http://stylelint.io) and [HTMLHint](http://htmlhint.com/)
-- Local knowledgebase server using [Hads](https://github.com/sinedied/hads)
 - Automatic code formatting with [Prettier](https://prettier.io)
 
 #### Libraries

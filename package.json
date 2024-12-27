@@ -1,12 +1,11 @@
 {
   "name": "frontendsystem",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "This is the frontend site",
   "homepage": "",
   "author": "Housi",
   "scripts": {
     "ng": "ng",
-    "docs": "hads ./docs -o",
     "postinstall": "pnpm run prettier -s && husky install",
     "build": "pnpm run ng build",
     "start": "pnpm run ng serve",
@@ -60,7 +59,6 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.17.0",
     "eslint-plugin-prettier": "5",
-    "hads": "^1.0.1",
     "https-proxy-agent": "^7.0.2",
     "husky": "^8.0.3",
     "jasmine-core": "~3.10.0",

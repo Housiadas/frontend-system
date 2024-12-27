@@ -1,3 +1,6 @@
+install:
+	pnpm install
+
 start:
 	pnpm run start
 
@@ -12,6 +15,3 @@ lint/fix:
 
 test:
 	pnpm run test
-
-documentation:
-	pnpm run docs
