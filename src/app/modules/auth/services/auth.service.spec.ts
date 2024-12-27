@@ -24,7 +24,7 @@ describe('AuthService', () => {
         it('should return credentials', fakeAsync(() => {
             // Act
             const request = AuthService.login({
-                username: 'toto',
+                email: 'toto',
                 password: '123',
             });
             tick();
@@ -41,7 +41,7 @@ describe('AuthService', () => {
 
             // Act
             const request = AuthService.login({
-                username: 'toto',
+                email: 'toto',
                 password: '123',
             });
             tick();
@@ -58,7 +58,7 @@ describe('AuthService', () => {
         it('should persist credentials for the session', fakeAsync(() => {
             // Act
             const request = AuthService.login({
-                username: 'toto',
+                email: 'toto',
                 password: '123',
             });
             tick();
@@ -73,7 +73,7 @@ describe('AuthService', () => {
         it('should persist credentials across sessions', fakeAsync(() => {
             // Act
             const request = AuthService.login({
-                username: 'toto',
+                email: 'toto',
                 password: '123',
                 remember: true,
             });
@@ -91,7 +91,7 @@ describe('AuthService', () => {
         it('should clear user authentication', fakeAsync(() => {
             // Arrange
             const loginRequest = AuthService.login({
-                username: 'toto',
+                email: 'toto',
                 password: '123',
             });
             tick();

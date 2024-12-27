@@ -1,9 +1,18 @@
+###################################
+# DEVELOPEMENT
+###################################
 install:
 	pnpm install
+
+outdated:
+	pnpm outdated
 
 start:
 	pnpm run start
 
+###################################
+# QUALITY CONTROL
+###################################
 prettier:
 	pnpm run prettier
 
