@@ -1,0 +1,35 @@
+# Node.js dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist
+out-tsc
+
+# Angular cache and temporary files
+.angular
+.idea
+.vscode
+*.swp
+*.swo
+
+# Environment files
+*.env
+*.local
+
+# Logs
+logs
+*.log
+
+# Git and version control
+.git
+.gitignore
+
+# Docker-specific files
+Dockerfile
+.dockerignore
+
+# System files
+.DS_Store
+Thumbs.db

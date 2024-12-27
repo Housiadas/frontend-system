@@ -20,6 +20,9 @@ export class SidebarComponent implements OnInit {
     public appName: string | undefined = environment.appName;
     public version: string | null = environment.version;
 
+    protected readonly faChevronCircleRight = faChevronCircleRight;
+    protected readonly faChevronCircleLeft = faChevronCircleLeft;
+
     constructor(
         public themeService: ThemeService,
         public menuService: MenuService,
@@ -34,7 +37,4 @@ export class SidebarComponent implements OnInit {
     toggleTheme() {
         this.themeService.theme = !this.themeService.isDark ? 'dark' : 'light';
     }
-
-    protected readonly faChevronCircleRight = faChevronCircleRight;
-    protected readonly faChevronCircleLeft = faChevronCircleLeft;
 }

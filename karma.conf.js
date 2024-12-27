@@ -34,8 +34,27 @@ module.exports = function (config) {
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: true,
-        browsers: ['Chrome'],
+        browsers: ['ChromeHeadlessNoSandbox'],
         singleRun: false,
         restartOnFileChange: true,
+
+        customLaunchers: {
+            ChromeHeadlessNoSandbox: {
+                base: 'ChromeHeadless',
+                flags: [
+                    '--no-sandbox',
+                    '--disable-dev-shm-usage',
+                    '--headless',
+                    '--disable-gpu',
+                    '--disable-translate',
+                    '--disable-extensions',
+                    '--disable-background-networking',
+                    '--disable-sync',
+                    '--disable-default-apps',
+                    '--mute-audio',
+                    '--disable-software-rasterizer',
+                ],
+            },
+        },
     });
 };

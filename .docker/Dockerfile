@@ -22,11 +22,9 @@ ENV CHROME_BIN=/usr/bin/google-chrome
 # Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
-
 # Copy the application code
 COPY . .
 
 # Install Angular CLI globally and project dependencies
-RUN npm install -g @angular/cli && npm install --ignore-scripts
+RUN npm install -g @angular/cli 
+RUN npm install --ignore-scripts

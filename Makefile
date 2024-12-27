@@ -1,4 +1,6 @@
-UID := $(id -u) 
+UID := $(shell id -u) 
+GID := $(shell id -) 
+PWD := $(shell pwd)
 
 ###################################
 # DEVELOPEMENT
@@ -28,5 +30,4 @@ lint/fix:
 	pnpm run lint-fix
 
 test:
-	make build
-	docker run --rm -v $(pwd):/app angular-container pnpm run test
+	docker run --rm -v $(PWD):/app angular-container pnpm run test
