@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
                 ending_in: '06h 52m 47s',
                 last_bid: 0.12,
                 image: './assets/images/img-01.jpg',
-                avatar: './assets/avatars/avt-01.jpg',
+                avatar: './assets/avatars/avatar.png',
             },
             {
                 id: 34356772,
